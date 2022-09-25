@@ -104,6 +104,9 @@ header .container {
   display: flex;
   margin-left: auto;
 }
+li .item {
+  display: flex;
+}
 .contact-header {
   font-size: 14px;
   line-height: 1.17;
@@ -111,15 +114,26 @@ header .container {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--header-contact-color);
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  text-align: center;
+  align-items: center;
 }
 .contact .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .contact .item:first-child {
   margin-right: 0px;
+}
+.icon:hover .mail, 
+.icon:hover .smart
+{
+  fill: var(--blue-color);
+}
+.icon {
+  margin-right: 10px;
+  
 }
 .first-section {
   background-color: var(--background-title-footer);
@@ -150,9 +164,9 @@ header .container {
   background-color: var(--blue-color);
   color: var(--white-color);
   cursor: pointer;
-  border-color: transparent;
   border-radius: 4px;
   padding: 10px 32px;
+  border: none;
 }
 
 .visually-hidden {
@@ -194,9 +208,19 @@ header .container {
 }
 .section-two {
   padding-top: 94px;
+ } 
+.icon-section-two {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+
+background-color: var(--footer-button-backgroung-color);
 }
+
 .section-three {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-buisness {
   font-size: 36px;
@@ -264,6 +288,27 @@ header .container {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.socialnetworks {
+  display: flex;
+  width: 270px;
+  margin-top: 16px;
+  padding: 0 32px 30px 32px;
+  margin-right: 0px;
+
+}
+.social-networks-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+margin-right: 10px;
+
+}
+.social-networks-icon:last-child {
+  margin-right: 0;
+}
+
 .footer {
   background-color: var(--background-title-footer);
 
